@@ -1,13 +1,14 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- This is the source code.  It looks much nicer if you see this in a browser.-->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <title>CMU Rowing Crew</title>
-    <meta name="description" content="The web site for the Carnegie Mellon University Rowing Crew."/>
-    <meta name="viewport" content="initial-scale=1"/>
-    <meta name="author" content="Oscar Bezi, oscar.bezi@gmail.com"/>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <meta name="description" content="The web site for the Carnegie Mellon University Rowing Crew.">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="author" content="Oscar Bezi, oscar.bezi@gmail.com">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <nav role="navigation" class="navbar navbar-default">
@@ -24,9 +25,38 @@
           <li><a href="/alumni">Alumni</a></li>
         </ul>
       </div>
+      <div class="maroon-banner"></div>
     </nav>
-    <h1>Hello!</h1>
-    <p>Welcome to the Tartan Crew page</p>
+    <div id="header-carousel" data-ride="carousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#header-carousel" data-slide-to="1"></li>
+        <li data-target="#header-carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <h1>Interested in joining?</h1>
+            <p>It doesn't matter whether you're an undergraduate or graduate student, there's always space on our team for a new member. We structure our novice programs to teach towards any athletic fitness, and any background.  Yes, even if you've never gotten on a boat before.</p>
+            <p><a href="/prospective" class="btn btn-lg btn-primary">Learn more</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <h1>News</h1>
+            <p>The latest and greatest with the rowing club.</p>
+            <p><a href="/#news" class="btn btn-lg btn-primary">Read more</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <h1>Rent-A-Rower</h1>
+            <p>Rent A Rower is a program that offers people living in the CMU/Shadyside/Squirrel Hill area the ability to "rent" our team members for various needs: cleaning, house work, yard work, moving, whatever! </p>
+            <p href="/#rentarower" class="a btn btn-lg btn-primary">Fill out the Rent-a-Rower request form!</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   </body>

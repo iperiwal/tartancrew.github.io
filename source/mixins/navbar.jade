@@ -8,7 +8,7 @@ mixin navbar(name)
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-            a.navbar-brand(href="/") Carnegie Mellon Crew
+            a.navbar-brand(href='/') Carnegie Mellon Crew
         .collapse.navbar-collapse#navbar-links 
             ul.nav.navbar-nav
                 +navitem("Home", name, '/')
@@ -17,3 +17,4 @@ mixin navbar(name)
                 +navitem("Prospective", name, '/prospective')
                 +navitem("Board", name, '/board')
                 +navitem("Alumni", name, '/alumni')
+        .maroon-banner
