@@ -1,4 +1,5 @@
 body {
+  text-align: center;
   background: url(../imgs/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,6 +11,9 @@ body {
     background: white; } }
 .navbar {
   background: rgba(21, 21, 21, 0.95);
+  border: 0;
+  border-radius: 0;
+  padding: 0;
   margin-bottom: 0; }
   .navbar .navbar-brand {
     color: white; }
@@ -23,7 +27,6 @@ body {
   height: 20px; }
 
 #header-carousel {
-  text-align: center;
   background: rgba(255, 255, 255, 0.8);
   margin: 0 auto; }
   #header-carousel .item {
@@ -46,3 +49,5 @@ body {
     color: white; }
     #header-carousel .item {
       height: 250px; } }
+.content.container {
+  background: rgba(255, 255, 255, 0.8); }

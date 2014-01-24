@@ -4,6 +4,7 @@
 $mobile-breakpoint: 768px;
 
 body {
+    text-align: center;
     background: url(../imgs/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,6 +21,9 @@ body {
 // Nav bar
 .navbar {
     background: rgba(21, 21, 21, 0.95);
+    border: 0;
+    border-radius: 0;
+    padding: 0;
     margin-bottom: 0;
     .navbar-brand {
         color: white;
@@ -38,7 +42,6 @@ body {
 
 // Carousel
 #header-carousel {
-    text-align: center;
     background: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
     .item {
@@ -67,4 +70,9 @@ body {
             height: 250px;
         }
     }
+}
+
+// Content
+.content.container {
+    background: rgba(255, 255, 255, 0.8);
 }

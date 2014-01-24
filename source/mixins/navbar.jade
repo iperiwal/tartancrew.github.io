@@ -2,19 +2,21 @@ mixin navitem(title, name, url)
     li(class=name===title?'active':undefined): a(href=url)= title
 
 mixin navbar(name)
-    nav.navbar.navbar-default(role="navigation")
-        .navbar-header
-            button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-links")
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href='/') Carnegie Mellon Crew
-        .collapse.navbar-collapse#navbar-links 
-            ul.nav.navbar-nav
-                +navitem("Home", name, '/')
-                +navitem("Varsity", name, '/varsity')
-                +navitem("Novice", name, '/novice')
-                +navitem("Prospective", name, '/prospective')
-                +navitem("Board", name, '/board')
-                +navitem("Alumni", name, '/alumni')
-        .maroon-banner
+    .container
+        .row
+            nav.navbar.navbar-default.col-lg-12(role="navigation")
+                .navbar-header
+                    button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-links")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') Carnegie Mellon Crew
+                .collapse.navbar-collapse#navbar-links 
+                    ul.nav.navbar-nav
+                        +navitem("Home", name, '/')
+                        +navitem("Varsity", name, '/varsity')
+                        +navitem("Novice", name, '/novice')
+                        +navitem("Prospective", name, '/prospective')
+                        +navitem("Board", name, '/board')
+                        +navitem("Alumni", name, '/alumni')
+                .maroon-banner
