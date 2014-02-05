@@ -64,7 +64,7 @@ body {
 
 @media (max-width: $mobile-breakpoint) {
     #header-carousel {
-        background: black;
+        background: rgba(21, 21, 21, 0.95);
         color: white;
         .item {
             height: 250px;
@@ -75,4 +75,19 @@ body {
 // Content
 .content.container {
     background: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: bold;
+    }
+    
+    td {
+        text-align: left;
+    }
+
+    .email {
+        font-style: italic;
+        color: rgb(125, 173, 27);
+    }
 }

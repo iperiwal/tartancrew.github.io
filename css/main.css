@@ -45,9 +45,17 @@ body {
 
 @media (max-width: 768px) {
   #header-carousel {
-    background: black;
+    background: rgba(21, 21, 21, 0.95);
     color: white; }
     #header-carousel .item {
       height: 250px; } }
 .content.container {
   background: rgba(255, 255, 255, 0.8); }
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-weight: bold; }
+.content td {
+  text-align: left; }
+.content .email {
+  font-style: italic;
+  color: #7dad1b; }
