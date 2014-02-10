@@ -1,5 +1,66 @@
 extends base
 block content
-    +navbar("Varsity")
-    h1 Hello!
-    p Welcome to the Tartan Crew page
+    +navbar("Current")
+    .container.content
+        .row
+            .col-lg-4.col-lg-offset-4
+                h1 Current Rowers
+                p Relevant documents, workouts, and other fun things.
+    .container.content
+        hr
+        .row
+            .col-lg-4
+                h2 Important Links
+                ul.list-group
+                    li.list-group-item
+                        a(href="https://www.facebook.com/download/655369461171690/Weekly%20Workouts-2-10_2-15.xlsx") This Week's Workouts
+                        p Note: only works if you're logged into Facebook.  Need to fix that. . . Google doc?
+
+            .col-lg-4
+                h2 Announcements
+                ul.list-group
+                    li.list-group-item
+                        h4.list-group-item-heading Unis have been ordered! (I think?)
+                        p.list-group-item-text They should come in. . . sometime.
+                    li.list-group-item
+                        h4.list-group-item-heading Confirming Upcoming Race
+                        p.list-group-item-text If you cannot make the erg races on 
+                            b Saturday, February 22
+                            | , make sure to email Dan by 
+                            b this Thursday, February 13
+                            | .
+
+            .col-lg-4
+                h2 Upcoming Events
+                ul.list-group
+                    li.list-group-item
+                        h4.list-group-item-heading Saturday, 15 February 2014
+                        p.list-group-item-text 2k test.  Be there or be square.
+                        
+                    li.list-group-item
+                        h4.list-group-item-heading Saturday, 22 February 2014
+                        p.list-group-item-text Erg races. . . somewhere.  Ohio?
+
+                    li.list-group-item
+                        h4.list-group-item-heading Friday, 7 March 2014
+                        p.list-group-item-text Camp Bob!  GET EXCITED
+
+        hr
+        .row
+            .col-lg-12
+                h5 Roster
+                p Everyone on the Rowing Crew (2013-2014)!
+                table.well.table.table-bordered.table-striped
+                    thead
+                        tr
+                            th Name
+                            th Major
+                            th Varsity/Novice
+                    tbody
+                        members = [{"position": "President", "name": "", "email": "president@tartancrew.org"},                                   {"position": "Vice President", "email": "vp@tartancrew.org"},                                   {"position": "Men's Team Cpatain", "email": "captains@tartancrew.org"},                                   {"position": "Women's Team Captain", "email": "captains@tartancrew.org"},                                   {"position": "Secretary", "email": "secretary@tartancrew.org"},                                   {"position": "Fundraising Chair", "email": "fundraising@tartancrew.org"},                                   {"position": "Public Relations", "email": "publicity@tartancrew.org"},                                   {"position": "Recruitment", "email": "recruitment@tartancrew.org"},                                  {"position": "Equipment", "email": "equipment@tartancrew.org"},                                   {"position": "Web Commander", "name": "Oscar Bezi", "email": "webmaster@tartancrew.org"}]
+                        each member in members
+                            tr
+                                td= member.name
+                                td= member.major
+                                td= member.crew
+                    
