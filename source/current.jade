@@ -48,19 +48,31 @@ block content
         hr
         .row
             .col-lg-12
-                h5 Roster
-                p Everyone on the Rowing Crew (2013-2014)!
+                h2 Roster
+                p Varsity Crew
                 table.well.table.table-bordered.table-striped
                     thead
                         tr
                             th Name
+                            th Year
                             th Major
-                            th Varsity/Novice
                     tbody
-                        members = [{"position": "President", "name": "", "email": "president@tartancrew.org"},                                   {"position": "Vice President", "email": "vp@tartancrew.org"},                                   {"position": "Men's Team Cpatain", "email": "captains@tartancrew.org"},                                   {"position": "Women's Team Captain", "email": "captains@tartancrew.org"},                                   {"position": "Secretary", "email": "secretary@tartancrew.org"},                                   {"position": "Fundraising Chair", "email": "fundraising@tartancrew.org"},                                   {"position": "Public Relations", "email": "publicity@tartancrew.org"},                                   {"position": "Recruitment", "email": "recruitment@tartancrew.org"},                                  {"position": "Equipment", "email": "equipment@tartancrew.org"},                                   {"position": "Web Commander", "name": "Oscar Bezi", "email": "webmaster@tartancrew.org"}]
-                        each member in members
+                        each member in current_varsity
                             tr
                                 td= member.name
+                                td= member.year
                                 td= member.major
-                                td= member.crew
                     
+                p Novice Crew
+                table.well.table.table-bordered.table-striped
+                    thead
+                        tr
+                            th Name
+                            th Year
+                            th Major
+                    tbody
+                        each member in current_novice
+                            tr
+                                td= member.name
+                                td= member.year
+                                td= member.major

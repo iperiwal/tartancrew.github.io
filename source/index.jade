@@ -1,45 +1,18 @@
 extends base
 block content
     +navbar("Home")
-    .container
-        .row
-            #header-carousel.carousel.slide.col-lg-12(data-ride="carousel")
-                ol.carousel-indicators
-                    li.active(data-target="#header-carousel" data-slide-to="0")
-                    li(data-target="#header-carousel" data-slide-to="1")
-                    li(data-target="#header-carousel" data-slide-to="2")
-                .carousel-inner
-                    .item.active
-                        .container
-                            h1 Interested in joining?
-                            p It doesn't matter whether you're an undergraduate or graduate student, there's always space on our team for a new member. We structure our novice programs to teach towards any athletic fitness, and any background.  Yes, even if you've never gotten on a boat before.
-                            p: a.btn.btn-lg.btn-primary(href="/prospective") Learn more
-                    .item
-                        .container
-                            h1 News
-                            p The latest and greatest with the rowing club.
-                            p: a.btn.btn-lg.btn-primary(href="/#news") Read more
-                    .item
-                        .container
-                            h1 Rent-A-Rower
-                            p Rent A Rower is a program that offers people living in the CMU/Shadyside/Squirrel Hill area the ability to "rent" our team members for various needs: cleaning, house work, yard work, moving, whatever! 
-                            p.a.btn.btn-lg.btn-primary(href="https://docs.google.com/spreadsheet/embeddedform?formkey=dHplMVhGWEtFYjZSU1ZrcGZmR19OQXc6MQ") Fill out the Rent-a-Rower request form!
-
     .container.content
+        h1 Welcome!
+        p This is the website for the Carnegie Mellon University Rowing Crew.  Founded in 1987, we've been rowing for a long time something something lazy writing.
+
         hr
         .row
-            .col-lg-4
-                h2 Prospective
-                p Wanna join the crew?  We want you to join too!.
-                p: a.btn.btn-default(href="/prospective") Learn more &raquo;
-
-            .col-lg-4
-                h2 Current Rowers
-                p Roster, announcements, and workout schedule.
-                p: a.btn.btn-default(href="/current") Read more &raquo;
-
-            .col-lg-4
-                h2 Board
-                p They run the club.  Members, minutes, and contact info.
-                p: a.btn.btn-default(href="/board") Read more &raquo;
-
+            .col-lg-6
+                h2 Interested in joining?
+                p It doesn't matter whether you're an undergraduate or graduate student, there's always space on our team for a new member. We structure our novice programs to teach towards any athletic fitness, and any background.  Yes, even if you've never gotten on a boat before.
+                p: a.btn.btn-lg.btn-primary(href="/prospective") Learn more
+            .col-lg-6
+                h1 Rent-A-Rower
+                p Rent A Rower is a program that offers people living in the CMU/Shadyside/Squirrel Hill area the ability to "rent" our team members for various needs: cleaning, house work, yard work, moving, whatever! 
+                p: a.btn.btn-lg.btn-primary(href="/fundraising#rentarower") Learn more
+                
