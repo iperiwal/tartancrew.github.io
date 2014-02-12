@@ -27,7 +27,7 @@
         },
         {
             "position": "Fundraising Chairs",
-            "name": "Rachel Chang, Nathaniel Benzanquen",
+            "name": "Rachel Chang, Nathaniel Benzaquen",
             "email": "fundraising@tartancrew.org"
         },
         {
@@ -53,16 +53,121 @@
     ],
     "current_varsity": [
         {
-            "name": "Alex Shie",
-            "year": "Master's",
-            "major": "Being A Badass"
+            "name": "Isa Daher",
+            "year": "Senior",
+            "major": "Operations Research, Statistics"
+        },
+        {
+            "name": "Lauren Ruoff",
+            "year": "Senior",
+            "major": "Art"
+        },
+        {
+            "name": "Rand Burzese",
+            "year": "Senior",
+            "major": "Mechanical Engineering"
+        },
+        {
+            "name": "Andrea Slamkowski",
+            "year": "Senior",
+            "major": "Biology, Psychology"
+        },
+        {
+            "name": "Luke Dioro-Toth",
+            "year": "Senior",
+            "major": "Chemistry, minor in Biological Sciences"
+        },
+        {
+            "name": "Julia Embody",
+            "year": "Junior",
+            "major": "International Relations and Politics, Russian Studies"
+        },
+        {
+            "name": "Brianna Pritchett",
+            "year": "Junior",
+            "major": "Cognitive Science, minor in Computer Science"
+        },
+        {
+            "name": "Bryan Phipps",
+            "year": "Junior",
+            "major": "Electrical and Computer Engineering"
+        },
+        {
+            "name": "Sam Winslow",
+            "year": "Junior",
+            "major": "Chemical Engineering, Engineering and Public Policy"
+        },
+        {
+            "name": "Tennley Noble",
+            "year": "Sophomore",
+            "major": "Decision Science"
+        },
+        {
+            "name": "Vishal Vala",
+            "year": "Sophomore",
+            "major": "Chemical Engineering, minor in Physics"
         }
     ],
     "current_novice": [
         {
+            "name": "Sophia Zikanova",
+            "year": "Junior",
+            "major": "Electrical and Computer Engineering, minor in Audio Engineering"
+        },
+        {
+            "name": "Ali McNulty",
+            "year": "Junior",
+            "major": "Mechanical Engineering, minor in Architecture"
+        },
+        {
+            "name": "Laura Caton",
+            "year": "Sophomore",
+            "major": "Technical Writing"
+        },
+        {
             "name": "Oscar Bezi",
             "year": "Freshman",
+            "major": "Computer Science, Electrical and Computer Engineering"
+        },
+        {
+            "name": "Sinan Cepel",
+            "year": "Freshman",
             "major": "Computer Science"
+        },
+        {
+            "name": "Rachel Chang",
+            "year": "Freshman",
+            "major": "Economics"
+        },
+        {
+            "name": "Srishti Jain",
+            "year": "Freshman",
+            "major": "Economics"
+        },
+        {
+            "name": "Alyssa Meyer",
+            "year": "Freshman",
+            "major": "Mechanical Engineering, Biomedical Engineering"
+        },
+        {
+            "name": "Gujri Singh",
+            "year": "Freshman",
+            "major": "Economics and Statistics"
+        },
+        {
+            "name": "Sam Rest",
+            "year": "Freshman",
+            "major": "Decision Sciences"
+        },
+        {
+            "name": "Allison Fisher",
+            "year": "Freshman",
+            "major": "Computer Science, Mechanical Engineering"
+        },
+        {
+            "name": "Nathaniel Benzaquen",
+            "year": "Freshman",
+            "major": "Decision Sciences, Business"
         }
     ]
 }
