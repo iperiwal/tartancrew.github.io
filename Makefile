@@ -1,6 +1,6 @@
 # Makefile for personal webstie.
 all:
-	jade source/fundraising.jade source/index.jade source/current.jade source/board.jade source/prospective.jade source/alumni.jade --out . --obj `echo data.json`
+	jade --pretty source/fundraising.jade source/index.jade source/current.jade source/board.jade source/prospective.jade source/alumni.jade --out . --obj `echo data.json`
 	scss --update source/scss:css
 pretty:
 	cp data.json back
