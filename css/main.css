@@ -1,30 +1,25 @@
 body {
-  text-align: center;
-  background: url(../imgs/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: white;
+  text-align: center; }
 
-@media (max-width: 768px) {
-  body {
-    background: white; } }
-.navbar {
+#navbar {
   background: rgba(21, 21, 21, 0.95);
   border: 0;
   border-radius: 0;
   padding: 0;
   margin-bottom: 0; }
-  .navbar .navbar-brand {
+  #navbar a {
     color: white; }
-
-.navbar-nav .active {
-  background: rgba(112, 1, 10, 0.85); }
+  #navbar .navbar-brand {
+    color: white; }
 
 .maroon-banner {
   background: rgba(112, 1, 10, 0.85);
-  width: 100%;
-  height: 20px; }
+  width: 100%; }
+  .maroon-banner .navbar-header {
+    text-transform: uppercase;
+    float: none;
+    padding-left: none; }
 
 #header-carousel {
   background: rgba(255, 255, 255, 0.8);

@@ -1,22 +1,23 @@
 mixin navitem(title, name, url)
-    li(class=name===title?'active':undefined): a(href=url)= title
+    li: a(href=url)= title
+    -#li(class=name===title?'active':undefined): a(href=url)= title
 
 mixin navbar(name)
-    .container
-        .row
-            nav.navbar.navbar-default.col-lg-12(role="navigation")
-                .navbar-header
-                    button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-links")
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a.navbar-brand(href='/') Carnegie Mellon Crew
-                .collapse.navbar-collapse#navbar-links 
-                    ul.nav.navbar-nav
-                        +navitem("Home", name, '/')
-                        +navitem("Current", name, '/current')
-                        +navitem("Prospective", name, '/prospective')
-                        +navitem("Fundraising", name, '/fundraising')
-                        +navitem("Board", name, '/board')
-                        +navitem("Alumni", name, '/alumni')
-                .maroon-banner
+    nav#navbar.navbar.navbar-default(role="navigation")
+        .maroon-banner
+            .navbar-header
+                button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-links")
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') Carnegie Mellon University Rowing Club
+        .collapse.navbar-collapse#navbar-links 
+            ul.nav.navbar-nav
+                +navitem("Home", name, '/')
+                +navitem("Prospective", name, '/prospective')
+                +navitem("Rowers", name, '/rowers')
+                +navitem("Fundraising", name, '/fundraising')
+                +navitem("Staff", name, '/staff')
+                +navitem("Events", name, '/events')
+                +navitem("Alumni", name, '/alumni')
+                +navitem("Donate", name, '/donate')
