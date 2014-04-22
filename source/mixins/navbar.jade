@@ -1,5 +1,6 @@
 mixin navitem(title, name, url)
-    li(class=name===title?'active':undefined): a(href=url)= title
+    li(class=name): a(href=url)= title 
+    //li(class=name===title?'active':undefined): a(href=url)= title
 
 mixin navbar(name)
     nav#navbar.navbar.navbar-default(role="navigation")
