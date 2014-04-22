@@ -1,6 +1,6 @@
 # Makefile for personal webstie.
 all:
-	jade --pretty source/index.jade source/prospective.jade source/rowers.jade source/fundraising.jade source/staff.jade source/events.jade source/alumni.jade source/donate.jade --out . --obj data.json
+	jade --pretty source/index.jade source/prospective.jade source/rowers.jade source/fundraising.jade source/staff.jade source/alumni.jade source/donate.jade --out . --obj data.json
 	scss --update source/scss:css
 start:
 	make all

@@ -1,6 +1,5 @@
 mixin navitem(title, name, url)
-    li: a(href=url)= title
-    -#li(class=name===title?'active':undefined): a(href=url)= title
+    li(class=name===title?'active':undefined): a(href=url)= title
 
 mixin navbar(name)
     nav#navbar.navbar.navbar-default(role="navigation")
@@ -18,6 +17,5 @@ mixin navbar(name)
                 +navitem("Rowers", name, '/rowers')
                 +navitem("Fundraising", name, '/fundraising')
                 +navitem("Staff", name, '/staff')
-                +navitem("Events", name, '/events')
                 +navitem("Alumni", name, '/alumni')
                 +navitem("Donate", name, '/donate')
