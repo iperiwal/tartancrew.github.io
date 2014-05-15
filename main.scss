@@ -1,0 +1,121 @@
+//colors
+$cmu-red: #872728;
+$cmu-dark-gray: #464646;
+$cmu-light-gray: #d4d4d4;
+$cmu-bg-light: #ffffff;
+$navbar-color: #222222;
+
+body {
+    background: $cmu-bg-light;
+    color: $cmu-dark-gray;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cmu-logo {
+    margin: 6px;
+}
+
+.clear {
+    clear: both;
+}
+
+#header {
+    padding: 0;
+    margin: 0;
+    background: $cmu-red;
+    color: $cmu-light-gray;
+    width: 100%;
+    overflow: auto;
+    .cmu-logo {
+        width: 45%;
+    }
+    .title {
+        margin: -10px 0 0 6px;
+        color: white;
+        font-size: 2em;
+    }
+}
+
+#nav-bar {
+    padding: 0;
+    margin: 0;
+    background: $navbar-color;
+    color: white;
+    width: 100%;
+
+    ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    li {
+        display: inline; 
+        font-size: 1.25em;
+        overflow: auto;
+
+        a {
+            text-decoration: none;    
+            padding: 0 3em;
+            color: white;
+            cursor: pointer;
+
+            &.active {
+                background: $cmu-bg-light;
+                color: $navbar-color;
+            }
+        }
+    }
+}
+
+#content {
+    & > div {
+        display: none;
+        overflow:auto;
+        width: 100%;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+}
+
+#rowers {
+    .announcements {
+        float: left;
+        width: 30%;
+        ul {
+            padding: none;
+        }
+
+        .announcement {
+            list-style: none;
+            .announcement-title {
+                
+            }
+
+            .announcement-description {
+
+            }
+        }
+    }
+
+    .rosters {
+        float: right;
+        width: 70%;
+        
+        table {
+            margin: 0 auto;
+            .title {
+                background: none;
+            }
+
+            tr:nth-child(odd){
+                background: #dae5f4;
+            }
+        }
+    }
+}

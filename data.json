@@ -172,23 +172,22 @@
     ],
     "events": [
         {
-            "id": "sample_event",
-            "title": "Event Title",
-            "description": "This is the description of the event.  Come on out, it'll be super fun, we promise!",
-            "long_description": "Here is some long HTML describing this event in detail"
+            "title": "Team Barbeque",
+            "description": "3pm Saturday, Baker Hall Patio.  Tartan crew alums should come and join us for delicious, delicious food and catch up!  Rewrite this shitttt"
         },
         {
-            "id": "camp_bob",
-            "title": "Camp Bob",
-            "description": "Every Spring Break, the rowing club goes to South Carolina to take advantage of the lovely weather and get on the water for a whole week, without any distractions.",
-            "long_description": "Camp Bob is the best!"
-        },
-        {
-            "id": "erg_lessons",
             "title": "Learn To Erg!",
-            "description": "Ergs, generally known as rowing machines, are an excellent way to get a full-body workout if you use them properly.  Let us teach you how!",
-            "long_description": "<h1>More detail!!!!!!!!!!!!</h1>"
+            "description": "Ergs, generally known as rowing machines, are an excellent way to get a full-body workout if you use them properly.  Let us teach you how!"
+        },
+        {
+            "title": "Kirk Cup",
+            "description": "In two weeks?  GOogle this."
         }
     ],
-    "eventso": []
+    "announcements": [
+        {
+            "title": "Carnival Shifts",
+            "description": "Those start this week.  Make sure to be on time for yours!"
+        }
+    ]
 }
