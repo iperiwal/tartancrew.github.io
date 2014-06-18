@@ -1,0 +1,28 @@
+/**
+ * @file graduates.json
+ * @brief List of CMURC graduates
+ * @author Oscar Bezi (bezi@cmu.edu)
+ * @since 17 June 2014
+ */
+var graduates = [
+    {
+        name: "Isa Daher",
+        major: "Operations Research, Statistics"
+    },
+    {
+        name: "Lauren Ruoff",
+        major: "Art"
+    },
+    {
+        name: "Rand Burzese",
+        major: "Mechanical Engineering"
+    },
+    {
+        name: "Andrea Slamkowski",
+        major: "Biology, Psychology"
+    },
+    {
+        name: "Luke Dioro-Toth",
+        major: "Chemistry, minor in Biological Sciences"
+    }
+];
