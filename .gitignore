@@ -1,0 +1,8 @@
+# @file .gitignore
+# @brief Files for git to ignore in the tartancrew website.
+# @author Oscar Bezi (bezi@cmu.edu)
+# @since 17 June 2014
+#================================================================================
+
+# ignore install directory for gulp and jade
+node_modules/

@@ -169,25 +169,5 @@
             "year": "Freshman",
             "major": "Decision Sciences, Business"
         }
-    ],
-    "events": [
-        {
-            "title": "Team Barbeque",
-            "description": "3pm Saturday, Baker Hall Patio.  Tartan crew alums should come and join us for delicious, delicious food and catch up!  Rewrite this shitttt"
-        },
-        {
-            "title": "Learn To Erg!",
-            "description": "Ergs, generally known as rowing machines, are an excellent way to get a full-body workout if you use them properly.  Let us teach you how!"
-        },
-        {
-            "title": "Kirk Cup",
-            "description": "In two weeks?  GOogle this."
-        }
-    ],
-    "announcements": [
-        {
-            "title": "Carnival Shifts",
-            "description": "Those start this week.  Make sure to be on time for yours!"
-        }
     ]
 }
