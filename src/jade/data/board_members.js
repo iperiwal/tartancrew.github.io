@@ -23,7 +23,7 @@ module.exports = [
     },
     {
         position: "Women's Team Captain",
-        name: "Someone",
+        name: "Alyssa Meyer",
         email: "captains@tartancrew.org"
     },
     {
