@@ -12,6 +12,7 @@ var clean = require('gulp-clean');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var filesize = require('gulp-filesize');
+var fs = require('fs');
 
 var jade = require('gulp-jade');
 
@@ -22,7 +23,7 @@ var minifyCSS = require('gulp-minify-css');
 
 // set to false to compile for release
 // minifies jade, js, css files
-var dev = true;
+var dev = false;
 
 // cleans compiled files
 gulp.task('clean', function() {
@@ -42,6 +43,7 @@ gulp.task('html', function() {
         pretty: dev,
         compileDebug: dev
     };
+    jade_opts.locals = JSON.parse(fs.readFileSync('./src/jade/data/data.json'));
     return gulp.src('./src/jade/*.jade')
         .pipe(jade(jade_opts))
         .pipe(gulp.dest('./'))
@@ -54,16 +56,15 @@ gulp.task('html', function() {
 gulp.task('js-vendor', function() {
     return gulp.src('./src/js/vendor/*.js')
         .pipe(concat('vendor.js')) // concatenate all the libraries
-        .pipe(gulp.dest('./assets/js')) // output unminified file
         .pipe(filesize()) // print its size
         .pipe(uglify()) // minify file
         .pipe(rename('vendor.min.js')) 
-        .pipe(gulp.dest('./assets/js')) // output minified file
         .pipe(filesize()) 
+        .pipe(gulp.dest('./assets/js')) // output minified file
         .on('error', gutil.log); // error handling
 });
 
-gulp.task('js', ['js-vendor'], function() {
+gulp.task('js', function() {
     // only minify if we're not developing
     if (dev) {
         return gulp.src('./src/js/*.js')
@@ -87,12 +88,12 @@ gulp.task('css-vendor', function() {
     return gulp.src('./src/scss/vendor/*.css')
             .pipe(concat('vendor.css'))
             .pipe(minifyCSS())
-            .pipe(gulp.dest('./assets/css/vendor.css'))
             .pipe(filesize())
+            .pipe(gulp.dest('./assets/css'))
             .on('error', gutil.log);
 });
 
-gulp.task('css', ['css-vendor'], function() {
+gulp.task('css', function() {
     if (dev) {
         return gulp.src('./src/scss/*.scss')
             .pipe(scss())

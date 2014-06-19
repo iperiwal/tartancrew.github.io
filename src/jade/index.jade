@@ -1,6 +1,160 @@
-extends includes/base
+//- @file index.jade
+//- @brief CMURC home page
+//- @author Oscar Bezi (bezi@cmu.edu)
+//- @since 17 June 2014
+//-=============================================================================
 
-block b
-    hahaha
-block c
-    bahahaha
+extends includes/base
+block title
+    title CMU Rowing Club
+block css
+    link(href="assets/css/index.css" rel="stylesheet")
+block content
+    h1 Welcome!
+    p This is the website for the Carnegie Mellon University Rowing Club.  Founded in 1987, we've been rowing on Pittsburgh's rivers for over 25 years! Right now we're hard at work training (in Pittsburgh and around the world) for the 2014 Fall Season.
+
+    hr
+    .row
+        .col-lg-6
+            h2 Interested in joining?
+            p It doesn't matter whether you're an undergraduate or graduate student, there's always space on our team for a new member. We structure our novice program to teach towards any athletic fitness, and any background. Yes, even if you've never gotten on a boat before.  We also have an 
+                a(href="https://docs.google.com/forms/d/1PX8FsTFbYdJ3RWWB4qWfZwfLE9PRmb7xgVHMX4SQ4Uc/viewform") interest form
+                | !
+            p: a.btn.btn-lg.btn-primary(href="#prospective") Learn more
+            hr
+            h2 Rent-A-Rower
+            p Rent A Rower is a program that offers people living in the CMU/Shadyside/Squirrel Hill area the ability to "rent" our team members for various needs: cleaning, house work, yard work, moving, whatever!  Fill out the form below to get started.
+            p: a.btn.btn-lg.btn-primary(href="https://docs.google.com/forms/d/1gpeB28kabdmZMUlfc56s2dZZwr4N9S43hRHm7OIxOjE/viewform") Contact Us
+
+        .col-lg-6
+            h3 Follow Us On Facebook!
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ftartancrew&amp;width=600&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:395px;" allowTransparency="true"></iframe>
+
+    hr
+    .row    
+        .col-lg-12#prospective
+            h2 Prospective Rowers
+            p Whether you're an experienced rower or completely new, you are welcome to join us on the water.  Rowing is an excellent way to get into and stay in shape, while also experiencing the outdoors.  We row on all three of Pittsburgh's rivers, but spend most of our time on the Allegheny.
+
+    .row
+        .col-lg-6
+            h4 Collegiate Rowing at CMU
+            p In collegiate rowing programs (including our own), all rowers have a full year of novice rowing.  This is when you learn to row and begin to bond with your teammates.  After a year, you become a varsity oarsmen.   Novices typically row 4+ or 8+, while the varsity members also row singles and pairs.
+            p However, not every member of the team pulls an oar.  We also have coxswains, who are the people in control of steering the boat and both motivating and leading the boat during races.  They are generally smaller than the oarsmen, and the excercise workouts are optional for them.
+
+        .col-lg-6
+            img(src="assets/imgs/womens_eight.jpg" alt="CMU Women's 8")
+            p Women's Eight on the Allegheny.  
+            p Credit: &copy;Will Ross
+    .row
+        .col-lg-6
+            img(src="assets/imgs/mens_four_camp_bob.jpg" alt="CMU Novice Men's 4")
+            p CMU Novice Men's Four at Camp Bob, SC
+            p Credit: Dan Tal
+
+        .col-lg-6
+            h4 Schedules
+            p Our rowers come from every college at CMU, from the School of Computer Science to the College of Fine Arts.  This means that we as a crew have to work together and meet diverse scheduling needs.  Water practices are daily from Monday to Friday, with either a water practice or excercise session on Saturday.  Typically, the novice crewmembers row in the afternoons with the novice coach, while the varsity row in the morning.  The practices run from an hour to an hour and half, and you have to get to and from the boathouse, typically by running (it's a great workout!).  
+            p The afternoon novice practice times will be decided by the crew to satisfy the most people's schedules as possible, but generally start around 5.  Similarly, varsity practices need to end in time for people to eat and be ready for 8:30 classes, so they begin at 5:15 AM.
+    .row.hidden
+        .col-lg-6
+            h4 Competition
+            p While we are a smaller crew, we compete at several regattas in the fall and the spring.  Our planned list of regattas for the fall:
+        .col-lg-6
+            img(src="assets/imgs/crew_at_kerr_cup.jpg" alt="CMU Crew at the Kerr Cup Spring 2014")
+            p CMU Crew at the Kerr Cup Spring 2014
+            p Credit: Someone?
+    .row
+        .col-lg-8.col-lg-offset-2
+            h4 Summary
+            p While there's a lot to know about rowing at CMU, the best thing to do is try it out!  We will begin recruitment in the fall, so swing by the CMU Club Fair in August, or email our Recruitment Chair 
+                span.email recruitment@tartancrew.org
+                |  for more details or if you have any questions.  You should also fill out our  
+                a(href='https://docs.google.com/forms/d/1PX8FsTFbYdJ3RWWB4qWfZwfLE9PRmb7xgVHMX4SQ4Uc/viewform') interest form
+                |  so we can contact you in the fall!
+    hr
+    .row
+        .col-lg-8.col-lg-offset-2#rosters
+            h2 Rosters
+    .row
+        .col-lg-6
+            h4 Novice Rowers 2014-2015
+            p Upcoming!         
+        .col-lg-6
+            h4 Varsity Rowers 2014-2015
+            table.well.table.table-bordered.table-striped
+                thead
+                    tr
+                        th Name
+                        th Year
+                        th Major
+                tbody
+                    each member in locals.current_varsity
+                        tr
+                            td= member.name
+                            td= member.year
+                            td= member.major
+    hr
+    .row
+        .col-lg-8.col-lg-offset-2#board
+            h2 Board
+            p The rowing club is governed by a board elected by dues-paying members.
+            p If you have any general questions regarding our organization, please email our President at 
+                span.email president@tartancrew.org
+                |, otherwise please find the appropriate person in the list below.
+            h5 These are the members of the 2014 Carnegie Mellon Rowing Club Board:
+            table.well.table.table-bordered.table-striped
+                thead
+                    tr
+                        th Position
+                        th Name
+                        th Email
+                tbody
+                    each member in locals.board_members
+                        tr
+                            td= member.position
+                            td= member.name
+                            td: span.email= member.email
+    hr
+    .row
+        .col-lg-8.col-lg-offset-2#alumni
+            h2 Alumni
+            p In October 2011, the Tartan Crew Alumni Network (TCAN) was launched! Alumni, parents, and friends are in the process of creating a vibrant alumni network for the Carnegie Mellon University Rowing Club (CMURC). The shape and direction of the network are still in the beta-stage, however the overarching goal is to provide opportunities to:
+
+    .row
+        .col-sm-4
+            p: b Connect with alumni
+        .col-sm-4
+            p: b Give back to the team
+        .col-sm-4
+            p: b Support the legacy of CMURC
+
+    .row
+        .col-lg-8.col-lg-offset-2
+            p The network is inclusive to: parents, coaches, advisors, staff, and alumni with any level of team association. If you have an affinity for the Carnegie Mellon University Rowing Club, we want you connected!
+
+            p Learn more and join 
+                a(href="http://alumni.cmu.edu/s/1410/alumni/index.aspx?sid=1410&gid=1&pgid=525") here
+                | .
+    .row 
+        .col-lg-8.col-lg-offset-2
+            p We'd also like to welcome the 2014 graduating varsity crewmembers to our alumni network!  We'd like to congratulate and thank the following for their years of dedication to the crew:
+
+            table.well.table.table-bordered.table-striped
+                thead
+                    tr
+                        th Name
+                        th Major
+                tbody
+                    each member in locals.graduates
+                        tr
+                            td= member.name
+                            td= member.major
+    hr
+    .row
+        .col-lg-8.col-lg-offset-2#donate
+            h2 Donate
+            p We are so appreciative to all of our generous donors! For those who are interested in giving back to the CMU Rowing Club, did you know you can donate online?!? You can do so easily by visiting the 
+                a(href="http://alumni.cmu.edu/s/1410/alumni/start.aspx") annual giving website
+                | . To designate a gift to the Rowing Club, select “other” from the drop-down menu and type “The University Rowing Club” in the comments box. Easy as that! We are so thankful for any and all support! 
+block js

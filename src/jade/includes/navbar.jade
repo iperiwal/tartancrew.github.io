@@ -1,0 +1,26 @@
+//- @file navbar.jade
+//- @brief Navigation bar for the CMURC page.
+//- @author Oscar Bezi (bezi@cmu.edu)
+//- @since 17 June 2014
+//-=============================================================================
+
+mixin navitem(title, url)
+    li: a(href=url)= title 
+
+nav#navbar.navbar.navbar-default(role="navigation")
+    .maroon-banner
+        .navbar-header
+            .navbar-brand
+                a(href="#") Carnegie Mellon University Rowing Club
+                button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-links")
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+    .collapse.navbar-collapse#navbar-links 
+        ul.nav.navbar-nav
+            +navitem('Home', '#')
+            +navitem('Prospective', '#prospective')
+            +navitem('Rosters', '#rosters')
+            +navitem('Board', '#board')
+            +navitem('Alumni', '#alumni')
+            +navitem('Donate', '#donate')

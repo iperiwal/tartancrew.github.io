@@ -1,4 +1,24 @@
-a
-a
-block b
-block c
+//- @file base.jade
+//- @brief Base template that the entire CMURC website derives from
+//- @author Oscar Bezi (bezi@cmu.edu)
+//- @since 17 June 2014
+//-=============================================================================
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block title
+        meta(name="description" content="Website of the CMU Rowing Club.")
+        meta(name="author" content="Oscar Bezi (bezi@cmu.edu)")
+        meta(name="viewport" content="initial-scale=1, width=device-width")
+        link(href="assets/css/vendor.css" rel="stylesheet")
+        block css
+        link(href="assets/imgs/favicon.ico" rel="shortcut icon")
+    body
+        include navbar
+        .container.content
+            block content
+        footer &copy; CMU Rowing Club, 2014
+        block js
+        script(src="assets/js/vendor.min.js")

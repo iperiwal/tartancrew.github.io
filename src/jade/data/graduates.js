@@ -1,10 +1,10 @@
 /**
- * @file graduates.json
+ * @file graduates.js
  * @brief List of CMURC graduates
  * @author Oscar Bezi (bezi@cmu.edu)
  * @since 17 June 2014
  */
-var graduates = [
+module.exports = [
     {
         name: "Isa Daher",
         major: "Operations Research, Statistics"

@@ -1,11 +1,11 @@
 /**
- * @file board_members.json
+ * @file board_members.js
  * @brief List of the CMURC board members and their positions
  * @author Oscar Bezi (bezi@cmu.edu)
  * @since 17 June 2014
  */
 
-var board_members = [
+module.exports = [
     {
         position: "President",
         name: "Julia Embody",
@@ -23,12 +23,17 @@ var board_members = [
     },
     {
         position: "Women's Team Captain",
-        name: "Lauren Ruoff",
+        name: "Someone",
         email: "captains@tartancrew.org"
     },
     {
+        position: "Treasurer",
+        name: "Sophia Zikanova",
+        email: "treasurer@tartancrew.org"
+    },
+    {
         position: "Secretary",
-        name: "Ruban Kopli",
+        name: "Laura Caton",
         email: "secretary@tartancrew.org"
     },
     {
@@ -43,11 +48,11 @@ var board_members = [
     },
     {
         position: "Recruitment",
-        name: "Srishti Jain",
+        name: "Christine Shen",
         email: "recruitment@tartancrew.org"
     },
     {
-        position: "Equipment",
+        position: "Equipment Manager",
         name: "Alyssa Meyer",
         email: "equipment@tartancrew.org"
     },

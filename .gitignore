@@ -6,3 +6,6 @@
 
 # ignore install directory for gulp and jade
 node_modules/
+
+# ignore .swp files
+*.swp
