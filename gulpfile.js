@@ -73,9 +73,6 @@ gulp.task('js', function() {
     } else {
         return gulp.src('./src/js/*.js')
             .pipe(uglify())
-            .pipe(rename(function(path) {
-                path.extname = ".min.js"
-            }))
             .pipe(gulp.dest('assets/js/'))
             .pipe(filesize()) 
             .on('error', gutil.log);

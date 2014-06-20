@@ -4,8 +4,8 @@
 //- @since 17 June 2014
 //-=============================================================================
 
-mixin navitem(title, url)
-    li: a(href=url)= title 
+mixin navitem(title, link_id)
+    li: a(id=link_id)= title 
 
 nav#navbar.navbar.navbar-default(role="navigation")
     .maroon-banner
@@ -18,9 +18,9 @@ nav#navbar.navbar.navbar-default(role="navigation")
                     span.icon-bar
     .collapse.navbar-collapse#navbar-links 
         ul.nav.navbar-nav
-            +navitem('Home', '#')
-            +navitem('Prospective', '#prospective')
-            +navitem('Rosters', '#rosters')
-            +navitem('Board', '#board')
-            +navitem('Alumni', '#alumni')
-            +navitem('Donate', '#donate')
+            +navitem('Home', 'homeBtn')
+            +navitem('Prospective', 'prospectiveBtn')
+            +navitem('Rosters', 'rostersBtn')
+            +navitem('Board', 'boardBtn')
+            +navitem('Alumni', 'alumniBtn')
+            +navitem('Donate', 'donateBtn')

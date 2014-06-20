@@ -5,3 +5,11 @@
 //==============================================================================
 
 @import 'includes/base';
+
+// hide rows unless they're active
+.row {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

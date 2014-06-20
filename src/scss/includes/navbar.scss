@@ -14,8 +14,12 @@
     margin-bottom: 0;
 
     a {
+        &.active {
+            background: rgba(112 , 1, 10, 0.85);
+        }
         color: white; 
         text-decoration: none;
+        cursor: pointer;
     }
 
     .navbar-header {
