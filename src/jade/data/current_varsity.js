@@ -12,11 +12,6 @@ module.exports = [
         major: "International Relations and Politics, Russian Studies"
     },
     {
-        name: "Brianna Pritchett",
-        year: "Senior",
-        major: "Cognitive Science, minor in Computer Science"
-    },
-    {
         name: "Bryan Phipps",
         year: "Senior",
         major: "Electrical and Computer Engineering"
@@ -65,11 +60,6 @@ module.exports = [
         name: "Rachel Chang",
         year: "Sophomore",
         major: "Design"
-    },
-    {
-        name: "Srishti Jain",
-        year: "Sophomore",
-        major: "Economics"
     },
     {
         name: "Alyssa Meyer",
