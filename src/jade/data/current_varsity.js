@@ -72,11 +72,6 @@ module.exports = [
         major: "Economics and Statistics"
     },
     {
-        name: "Sam Rest",
-        year: "Sophomore",
-        major: "Decision Sciences"
-    },
-    {
         name: "Allison Fisher",
         year: "Sophomore",
         major: "Mechanical Engineering"
@@ -90,5 +85,15 @@ module.exports = [
         name: "Shreya Gupta",
         year: "Sophomore",
         major: "Electrical and Computer Engineering"
+    },
+    { 
+        name: "Christine Shen",
+        year: "Sophomore",
+        major: "Decision Sciences"
+    },
+    {
+        name: "John Ho",
+        year: "Sophomore",
+        major: "Economics and Statistics"
     }
 ];

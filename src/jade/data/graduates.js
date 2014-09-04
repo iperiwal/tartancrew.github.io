@@ -22,7 +22,11 @@ module.exports = [
         major: "Biology, Psychology"
     },
     {
-        name: "Luke Dioro-Toth",
+        name: "Luke Diorio-Toth",
         major: "Chemistry, minor in Biological Sciences"
+    }, 
+    {
+        name: "Karl DeStephano",
+        major: "Astrophysics"
     }
 ];
