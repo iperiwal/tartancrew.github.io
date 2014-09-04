@@ -89,7 +89,7 @@ module.exports = [
     { 
         name: "Christine Shen",
         year: "Sophomore",
-        major: "Decision Sciences"
+        major: "Undeclared Dietrich"
     },
     {
         name: "John Ho",
