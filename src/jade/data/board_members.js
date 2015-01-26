@@ -8,12 +8,12 @@
 module.exports = [
     {
         position: "President",
-        name: "Julia Embody",
+        name: "Laura Caton",
         email: "president@tartancrew.org"
     },
     {
         position: "Vice President",
-        name: "Alison McNulty",
+        name: "Vishal Vala",
         email: "vp@tartancrew.org"
     },
     {
@@ -28,27 +28,27 @@ module.exports = [
     },
     {
         position: "Treasurer",
-        name: "Sophia Zikanova",
+        name: "Rachel Chang",
         email: "treasurer@tartancrew.org"
     },
     {
         position: "Secretary",
-        name: "Laura Caton",
+        name: "Shreya Gupta",
         email: "secretary@tartancrew.org"
     },
     {
         position: "Fundraising Chairs",
-        name: "Rachel Chang, Nathaniel Benzaquen",
+        name: "Tennley Noble, Eric Peet",
         email: "fundraising@tartancrew.org"
     },
     {
         position: "Public Relations",
-        name: "Tennley Noble",
+        name: "Ali McNulty",
         email: "publicity@tartancrew.org"
     },
     {
         position: "Recruitment",
-        name: "Christine Shen",
+        name: "Felipa Archondo",
         email: "recruitment@tartancrew.org"
     },
     {
