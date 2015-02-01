@@ -48,7 +48,7 @@ module.exports = [
     },
     {
         position: "Recruitment",
-        name: "Felipa Archondo",
+        name: "Felipe Archondo",
         email: "recruitment@tartancrew.org"
     },
     {
