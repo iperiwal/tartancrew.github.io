@@ -107,11 +107,16 @@ a:hover {
 }
 #top-bar.animated-header {
   padding: 20px 0;
-  background: #ffffff;
+  background: #1a1a1a;
+  box-shadow: none;
+}
+#top-bar.animated-header-2 {
+  padding: 20px 0;
+  background: #73191F;
   box-shadow: none;
 }
 #top-bar .main-menu li > a {
-  color: #444;
+  color: #696969;
 }
 #top-bar .main-menu li {
   position: relative;
