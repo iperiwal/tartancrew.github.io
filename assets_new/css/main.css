@@ -202,13 +202,14 @@ a:hover {
   border-radius: 0;
 }
 #call-to-action {
-  background: #02bdd5;
+  background: #800000;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
   text-align: center;
   position: relative;
   color: #fff;
+  font-size: 30px;
 }
 #call-to-action .block {
   position: relative;

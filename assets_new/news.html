@@ -248,11 +248,61 @@ A successful day all around! Now it's back to winter training in preparation for
                     <div class="col-md-12">
                         <h2 class="subtitle text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">What's Next?</h2>
                         <p class="subtitle-des text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">The team is now ready for the rest of 2017 winter training, Camp Bob and spring races!</p>
-                        
+                    
+                    
                     </div>
                 </div>
             </div>
         </section>
+        
+
+
+            
+        <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <h2 class="subtitle text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Final Countdown Til Camp Bob</h2>
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </section>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 11, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("call-to-action").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
         
         <!--
             ==================================================
