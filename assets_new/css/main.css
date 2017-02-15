@@ -378,7 +378,7 @@ figure figcaption h4 {
   margin: 0;
 }
 figure figcaption h4 a {
-  color: #02bdd5;
+  color: #800000;
 }
 figure figcaption p {
   font-size: 14px;
@@ -411,7 +411,7 @@ figure figcaption p {
 #feature .icon {
   text-decoration: none;
   color: #fff;
-  background-color: #02bdd5;
+  background-color: #800000;
   height: 100px;
   text-align: center;
   width: 100px;
@@ -588,7 +588,7 @@ ul.social-icons li {
 }
 #product-showcase-banner .block h2 {
   font-size: 40px;
-  color: #02bdd5;
+  color: #800000;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -706,7 +706,7 @@ ul.social-icons li {
 }
 #related-items .block h4 span {
   float: right;
-  color: #02bdd5;
+  color: #800000;
 }
 #related-items .block .img-overly {
   position: relative;
@@ -800,7 +800,7 @@ ul.social-icons li {
 }
 .wrapper_404 h1 {
   font-size: 200px;
-  color: #02bdd5;
+  color: #800000;
   line-height: 1;
 }
 .wrapper_404 h2 {
@@ -919,15 +919,15 @@ article {
   margin-top: 20px;
 }
 .blog-content .btn-details {
-  color: #02bdd5;
+  color: #800000;
   padding: 0;
-  background: #02bdd5;
+  background: #800000;
   color: #fff;
   padding: 8px 18px;
   border-radius: 0;
   margin-top: 15px;
   border: 1px solid #fff;
-  box-shadow: 0px 0px 0px 1px #02bdd5;
+  box-shadow: 0px 0px 0px 1px #800000;
 }
 .blog-post-image {
   margin-top: 30px;
