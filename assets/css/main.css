@@ -85,8 +85,8 @@ a:hover {
   display: inline-block;
   margin-top: 0;
   position: fixed;
-  top: 5px;
-  left: 5px;
+  top: 15px;
+  left: 10px;
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle {
@@ -116,7 +116,7 @@ a:hover {
   box-shadow: none;
 }
 #top-bar .main-menu li > a {
-  color: #696969;
+  color: #ffffff;
 }
 #top-bar .main-menu li {
   position: relative;
@@ -131,7 +131,7 @@ a:hover {
   text-transform: uppercase;
 }
 #top-bar .main-menu li a:hover {
-  color: #ffffff;
+  color: #696969;
 }
 .navbar-custom .nav li > a {
   position: relative;
