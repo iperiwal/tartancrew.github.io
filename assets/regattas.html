@@ -83,19 +83,31 @@
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="../index" >Home</a>
+                                <a href="index" >Home</a>
                             </li>
-                            <li><a href="news">News</a></li>
-
-                            <li><a href="regattas">Regattas</a></li>
-                            <li><a href="roster">Roster</a></li>
-
-                            <li><a href="results">Results</a></li>
-                            <li><a href="join_us">JOIN US!</a></li>
-                            <li><a href="gallery">Gallery</a></li>
-                            <li><a href="alumni">Alumni</a></li>
-                            <li><a href="rentarower">Rent A Rower</a></li>
-                            <!-- <li><a href="contact">Contact</a></li> -->
+                            <div class="dropdown">
+                                <button class="dropbtn">News <span class="caret"></span></a>
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="assets/news">Updates</a>
+                                    <a href="assets/regattas">Regattas</a>
+                                    <a href="assets/results">Results</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">DONATE <span class="caret"></span></a>
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <li><a href="assets/rentarower">Rent A Rower</a></li>
+                                    <li><a href="assets/alumni">Alumni</a></li>
+                                </div>
+                            </div> 
+                            <li><a href="assets/roster">Roster</a></li>
+                            <li><a href="assets/join_us">JOIN US!</a></li>
+                            <li><a href="assets/gallery">Gallery</a></li>
+                            <!-- <li><a href="assets/contact">Contact</a></li> -->
 
                         </ul>
                     </div>
@@ -113,62 +125,31 @@
                     <div class="col-md-12">
                         <div class="block">
                             <h2>Regattas</h2>
-                            <ol class="breadcrumb">
-                                <li>
-                                    <a href="../index">
-                                        <i class="ion-ios-home"></i>
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="active">Regattas</li>
-                            </ol>
                         </div>
                     </div>
                 </div>
             </div>
             </section><!--/#Page header-->
-            <section id="blog-full-width">
+
+            <section id="contact-section">
                 <div class="container">
+                    <img class="img-responsive" src="../assets/images/resultsPics/results_3.jpg" alt="" />
                     <div class="row">
-                        <div class="col-md-12">
-                            <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="../assets/images/knecht.jpg" alt="" /></a>
-                                </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html">Spring 2020 Racing Schedule</a>
-                                    </h2>
-                                    <div class="blog-meta">
-                                        <span>Feburary 10, 2020</span>
-                                    </div>
-                                    <p>
-                                    <div class="recent-post widget">
-                                        <ul>
-                                            <li>
-                                                <h2> Knecht Cup - Cherry Hill, NJ</h2>
-                                                <time>April 10 - 11, 2020</time>
-                                            </li>
-                                            <li>
-                                                <h2> Mid Atlantic Rowing Conference - Lewisberry, PA</h2>
-                                                <time>April 25, 2020</time>
-                                            </li>
-                                            <li>
-                                                <h2> Vails - Philadelphia, PA</h2>
-                                                <time>May 8 - 9, 2020</time>
-                                            </li>
-                                            <li>
-                                                <h2> ACRAs - Gainesville, GA</h2>
-                                                <time>May 22 - 24, 2020</time>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </p>
-                                </div>
-
-                            </article>
-
+                        <div class="col-md-6">
+                            <div class="block">
+                                <h2 class="title  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Spring 2020 Racing Schedule</h2>
+                                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">Knecht Cup - Cherry Hill, NJ</h2>
+                                <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">April 10 - 11, 2020</p>
+                                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s"> Mid Atlantic Rowing Conference - Lewisberry, PA</h2>
+                                <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">April 25, 2020</p>
+                                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">Vails - Philadelphia, PA</h2>
+                                <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">May 8 - 9, 2020</p>
+                                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">ACRAs - Gainesville, GA</h2>
+                                <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">May 22 - 24, 2020</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </section>
 
