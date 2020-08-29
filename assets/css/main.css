@@ -12,13 +12,13 @@ h5,
 h6 {
   font-family: 'Roboto Condensed', sans-serif;
 }
-p,h1 {
+p,h5 {
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
   font-size: 16px;
   font-weight: 300;
 }
-h1:before {
+h5:before {
     content: "\2022";
     color: #800000;
 }
