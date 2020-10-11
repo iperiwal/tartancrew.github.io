@@ -59,8 +59,7 @@ $(document).ready(function(){
 
     $('#bt1').click(function() {
         $('#fr1').attr('action',
-                       'mailto:webmaster@tartancrew.org?subject=' +
-                       $('Crew D&I Feedback').val() + '&body=' + $('#tb1').val());
+                       'mailto:webmaster@tartancrew.org' + '&body=' + $('#tb1').val());
         $('#fr1').submit();
     });
 
