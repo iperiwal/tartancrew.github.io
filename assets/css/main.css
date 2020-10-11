@@ -153,7 +153,12 @@ a:hover {
   opacity: 0;
 }
 #hero-area {
-  background: url('../../assets/images/womens_eight.jpg') no-repeat 50%;
+  background: url('../../assets/images/womens_eight.JPG') no-repeat 50%;
+  /*womens_eight.jpg*/
+  /*DSC_0027*/
+  /*P1020218*/
+  /*homeImages/20160308_065402.jpg*/
+  /*campbob2020/camp_bob_2020_17.JPG*/
   background-size: cover;
   background-attachment: fixed;
   padding: 230px 0;
@@ -164,7 +169,7 @@ a:hover {
 #hero-area:before {
   content: '';
   z-index: 9;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.80);
   position: absolute;
   top: 0;
   left: 0;
@@ -1057,7 +1062,7 @@ article {
   border-radius: 0;
 }
 .single-post .post-comment .btn-send {
-  background: #02bdd5;
+  background: #414141;
   color: #fff;
   border-radius: 0;
 }
