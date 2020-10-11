@@ -1,3 +1,12 @@
+<?php
+
+if($_POST["message"]) {
+mail("webmaster@tartancrew.org", "Here is the subject line",
+$_POST["insert your message here"]. "From: webmaster@tartancrew.org");
+
+}
+?>
+
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -146,20 +155,10 @@ Ongoing
                                     <div class="block">
                                         <p>This is an anonymous platform to discuss any incidents or issues that has come up during team interactions.  The purpose of this is to make sure the team is a safe inclusive environment for everyone.  The information will be discussed amongst the D&I committee, and if necessary, shared with board or other members involved.  Since this is fully anonymous and we cannot contact you with follow-up questions, we ask that you be as descriptive as you can. We will take every submission seriously.  Thank you for your feedback!</p>
                                     <div/>
-                                <form id ="f1" role="form" class="form-horizontal">
-                                    <div class="form-group">
-                                        <div class="col-lg-12">
-                                            <input type="text" id = "tb1" class=" form-control" rows="8" placeholder="Message"/>
-                                        </div>
-                                    </div>
-                                    <p>
-                                    </p>
-                                    <p>
-                                        <input type = "button" id = "bt1" value="click"/>
-                                    </p>
-                                    
-                                    <p></p>
-                                </form>
+                                    <form method="post" action="subscriberform.php">
+                                        <textarea name="message"></textarea>
+                                        <input type="submit">
+                                    </form>                       
                             </div>
                             
                         </div>
