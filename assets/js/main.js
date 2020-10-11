@@ -57,10 +57,15 @@ jQuery(document).ready(function(){
 
 $(document).ready(function(){
 
-
-
+    $('#bt1').click(function() {
+        $('#fr1').attr('action',
+                       'mailto:webmaster@tartancrew.org?subject=' +
+                       $('Crew D&I Feedback').val() + '&body=' + $('#tb1').val());
+        $('#fr1').submit();
+    });
 
     $(window).scroll(function () {
+        
         if ($(window).scrollTop() > 50) {
             $(".navbar-brand a").css("color","#fff");
             $("#top-bar").removeClass("animated-header");
@@ -105,7 +110,6 @@ $(".fancybox").fancybox({
         }
     }
 });
-
 
 
 
