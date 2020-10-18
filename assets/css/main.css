@@ -170,7 +170,8 @@ a:hover {
   content: '';
   z-index: 9;
 /*  background: rgba(255, 255, 255, 0.78);
-*/  position: absolute;
+*/  
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
