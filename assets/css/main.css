@@ -153,7 +153,7 @@ a:hover {
   opacity: 0;
 }
 #hero-area {
-  background: url('../../assets/images/womens_eight.jpg') no-repeat 50%;
+  background: url('../../assets/images/homeImages/P1020218.jpg') no-repeat 50%;
   /*womens_eight.jpg*/
   /*DSC_0027*/
   /*P1020218*/
@@ -161,7 +161,7 @@ a:hover {
   /*campbob2020/camp_bob_2020_17.JPG*/
   background-size: cover;
   background-attachment: fixed;
-  padding: 230px 0;
+  padding: 270px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -169,8 +169,8 @@ a:hover {
 #hero-area:before {
   content: '';
   z-index: 9;
-  background: rgba(255, 255, 255, 0.78);
-  position: absolute;
+/*  background: rgba(255, 255, 255, 0.78);
+*/  position: absolute;
   top: 0;
   left: 0;
   right: 0;
