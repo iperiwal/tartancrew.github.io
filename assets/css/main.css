@@ -1153,7 +1153,7 @@ article {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*#top-bar .dropdown-menu > ul > li > a {
+#top-bar .dropdown-menu > ul > li > a {
   display: block;
   font-size: 13px;
   font-weight: 400;
@@ -1162,4 +1162,4 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}*/
+}
