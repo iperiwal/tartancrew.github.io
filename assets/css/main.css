@@ -152,6 +152,8 @@ a:hover {
   visibility: hidden;
   opacity: 0;
 }
+
+
 #hero-area {
   background: url('../../assets/images/sunsetBoat.jpg') no-repeat 50%;
   /*womens_eight.jpg*/
@@ -212,6 +214,17 @@ a:hover {
   letter-spacing: normal;
   border-radius: 0;
 }
+
+.banner {
+  width: 100%;
+  display: block;
+}
+
+.banner >.banner-image {
+  width: 100%;
+  display: block;
+}
+
 #call-to-action {
   background: #800000;
   background-size: cover;
