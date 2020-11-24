@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
-body {
+body,html {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 h1,
 h2,
@@ -32,6 +33,7 @@ ul li {
 h2 {
   font-size: 26px;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -161,19 +163,20 @@ a:hover {
   /*P1020218*/
   /*homeImages/20160308_065402.jpg*/
   /*campbob2020/camp_bob_2020_17.JPG*/
-  background-size: cover;
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  padding: 270px 0;
-  color: #fff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
 }
 #hero-area:before {
   content: '';
   z-index: 9;
 /*  background: rgba(255, 255, 255, 0.78);
-*/  
-  position: absolute;
+*/  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -188,8 +191,11 @@ a:hover {
   line-height: 50px;
   color: #333;
   font-weight: 700;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+  margin-top:250px;
+/*  top: 50%;
+  left: 50%;*/
+/*  transform: translate(-50%, -50%);
+*/  text-transform: uppercase;
 }
 #hero-area h2 {
   font-size: 18px;
