@@ -1180,16 +1180,6 @@ article {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-/*.button1:hover {
-*//*  background-color: white; 
-  color: #800000; 
-  border: 3px solid #800000;
-}
-
-.button1 {
-  background-color: #800000;
-  color: white;
-}*/
 
 .button1 {
   background-color: white; 
