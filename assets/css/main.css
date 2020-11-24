@@ -1172,23 +1172,37 @@ article {
   color: white;
   padding: 16px 32px;
   text-align: center;
-/*  text-decoration: none;
-*/  display: inline-block;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
+  font-weight: 400;
   margin: 4px 2px;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
-.button1 {
-  background-color: #f9f9f9; 
-  color: black; 
+/*.button1:hover {
+*//*  background-color: white; 
+  color: #800000; 
   border: 3px solid #800000;
+}
+
+.button1 {
+  background-color: #800000;
+  color: white;
+}*/
+
+.button1 {
+  background-color: white; 
+  color: #800000; 
+  border: 2px solid #800000;
 }
 
 .button1:hover {
   background-color: #800000;
   color: white;
 }
+
+
 #top-bar .dropdown-menu > ul > li > a {
   display: block;
   font-size: 13px;
